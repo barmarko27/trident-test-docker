@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  php72_trident:
+    build:
+      context: .
+    volumes:
+      - ../www-data:/var/www
+      - ./hosts:/etc/hosts
+    container_name: php72_trident
+    tty: true
+    working_dir: /var/www
+    networks:
+      dev:
+        ipv4_address: 192.168.40.121
+
+networks:
+  dev:
+    external: true
