@@ -2,3 +2,4 @@
 .idea/
 /www-data/*
 !/www-data/.gitkeep
+/mariadb-container/data/*

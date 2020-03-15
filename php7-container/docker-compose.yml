@@ -1,19 +1,19 @@
 version: '3'
 
 services:
-  php72_trident:
+  php7_trident:
     build:
       context: .
     volumes:
       - ../www-data:/var/www
       - ./hosts:/etc/hosts
-    container_name: php72_trident
+    container_name: php7_trident
     tty: true
     working_dir: /var/www
     networks:
-      dev:
-        ipv4_address: 192.168.40.121
+      trident_test_ntw:
+        ipv4_address: 192.168.40.72
 
 networks:
-  dev:
+  trident_test_ntw:
     external: true

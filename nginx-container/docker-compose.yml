@@ -12,9 +12,9 @@ services:
     tty: true
     working_dir: /var/www
     networks:
-      dev:
-        ipv4_address: 192.168.40.120
+      trident_test_ntw:
+        ipv4_address: 192.168.40.88
 
 networks:
-  dev:
+  trident_test_ntw:
     external: true

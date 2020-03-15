@@ -1,4 +1,4 @@
-FROM nanoninja/php-fpm:7.2
+FROM nanoninja/php-fpm:7.3.2
 
 RUN apt-get update && apt-get install -y build-essential libz-dev
 

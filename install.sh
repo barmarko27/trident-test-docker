@@ -14,13 +14,24 @@ sh ./provisioning/create-network.sh
 echo
 echo "***********************************************************"
 echo "*                                                         *"
+echo "* Launching MariaDB...                                    *"
+echo "*                                                         *"
+echo "***********************************************************"
+echo ""
+echo ""
+echo ""
+docker-compose -f ./mariadb-container/docker-compose.yml up -d
+
+echo
+echo "***********************************************************"
+echo "*                                                         *"
 echo "* Launching PHP 72...                                     *"
 echo "*                                                         *"
 echo "***********************************************************"
 echo ""
 echo ""
 echo ""
-docker-compose -f ./php72-container/docker-compose.yml up -d
+docker-compose -f ./php7-container/docker-compose.yml up -d
 
 echo
 echo "***********************************************************"
