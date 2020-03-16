@@ -13,6 +13,13 @@ services:
     networks:
       trident_test_ntw:
         ipv4_address: 192.168.40.72
+    environment:
+      - MYSQL_DB_USER=trident_test_user
+      - MYSQL_DB_PASSWORD=Ffk30odskm21
+      - MYSQL_DB_HOST=mariadb
+      - MYSQL_DB_PORT=3386
+      - MYSQL_DB_NAME=trident_test
+      - MYSQL_VERSION=5.6
 
 networks:
   trident_test_ntw:

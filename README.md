@@ -25,3 +25,9 @@ Once all containers are up and project is cloned, add to your **/etc/host** this
 After that, try to visit [this url](http://test.trident.local:8080/api/doc).
 
 See application instruction: [README](https://github.com/barmarko27/trident-test-app/blob/master/README.md)
+
+If you want shutdown all containers run this command:
+
+```
+* sh downall.sh
+```
